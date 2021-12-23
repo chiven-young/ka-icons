@@ -1,7 +1,3 @@
-var domain = "www.chiven.net";
-var apisec = "19940409";
-var API_URL = 'https://' + domain + '/api/';
-
 var app = new Vue({
     el: '#app',
     data () {

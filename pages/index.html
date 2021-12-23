@@ -11,7 +11,6 @@
         <script src="../js/vue.min.js"></script>
         <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
         <script src="https://unpkg.com/element-ui/lib/index.js"></script>
-        <!-- <script src="../js/api.js"></script> -->
         <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
         <style>
             #app .el-collapse-item__header, .el-collapse-item__wrap {
@@ -89,22 +88,6 @@
                     <a class="button hero-btn primary" id="modalBtn">下载图标</a>
                 </div>
             </div>
-            <!-- <div>
-                <div class="comments" v-if="commentsNum !='0'">
-                    <div>评论列表</div>
-                    <div class="comments-des" v-for="(comment, index) in comments" :key="index">
-                        <div class="comments-flex">
-                            <div class="comments-name">{{comment.author}}</div>
-                            <div>{{formatDate(comment.created)}}</div>
-                        </div>
-                        <div>{{comment.text}}</div>
-                        <div v-if="comment.replays">
-                            <div>{{comment.replays[0].author}}</div>
-                            <div>{{comment.replays[0].text}}</div>
-                        </div>
-                    </div>
-                </div>
-            </div> -->
             <div class="container">
                 <div class="section-title">
                     <span class="color-deep">更新了，</span><span class="color-shallow">看看这些新图标！<sup>1</sup></span>
@@ -201,7 +184,7 @@
                 <div class="card-content themes card-more">
                     <div class="card-more-content">
                         <span class="text-remind">欢迎创作</span>
-                        <div class="text-large" style="padding: 6px 0 0 0;">免费使用KA ICONS开发主题！<sup>2</sup></div>
+                        <div class="text-large" style="padding: 6px 0 0 0;">免费使用《一函碎念》开发主题！<sup>2</sup></div>
                         <div class="card-desc">欢迎主题开发者们使用本图标开发自己的主题，主题所获得利益归主题开发者所有。</div>
                         <div style="position: absolute; bottom: 60px;">
                             <a href="./copyright.html">版权声明</a>&emsp;<span class="split-line">|</span>&emsp; 
@@ -215,7 +198,7 @@
             <div class="container">
                 <div class="text-small"><i class="el-icon-warning-outline"></i> 对于已经上线的主题，请前往对应手机主题商城搜索获取主题。</div>
                 <br><br>
-                <div>未来计划</div>
+                <!-- <div>未来计划</div>
                 <div class="footnotes">
                     1. 计划暂不绘制的图标:<br>
                     大部分游戏APP，因为太花哨了不好画。<br>
@@ -225,7 +208,7 @@
                     vivo,oppo<br>
                     4. 还有什么计划？<br>
                     没有了。
-                </div>
+                </div> -->
                 <footnotes-explain></footnotes-explain>
             </div>
             <download-dialog></download-dialog>
