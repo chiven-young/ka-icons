@@ -1,6 +1,8 @@
 # 一函碎念
 Yo-ho Scrawl Icons
+
 平时随便画的玩梗图标，偶尔更新。因为这些图标是一些琐碎的小脑洞，彼此不成体系，故名《一函碎念》。
+
 本项目是一个展示《一函碎念》的网站。可以点此查看：
 https://www.chiven.net/project/Yo-ho-Scrawl-Icons/pages/index.html
 
@@ -11,6 +13,11 @@ https://www.chiven.net/project/Yo-ho-Scrawl-Icons/pages/index.html
 | assets/icons/ | 192*192px | png | 一倍图，制作手机主题时默认图标大小 |
 | assets/icons@4x/ | 768*768px | png | 高清四倍图 |
 | assets/macicns/ | 1024*1024px | icns | macOS app图标 |
+
+## 下载图标
+
+1. 百度网盘：链接:https://pan.baidu.com/s/1hOuUiqa56yyjBpu9PZWsTQ 提取码:4sji
+2. 或点击本页右上角的 Clone => Download ZIP，图标在 assets文件夹下。
 
 ## 一些图标展示
 
