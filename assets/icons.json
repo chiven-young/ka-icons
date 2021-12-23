@@ -1,0 +1,566 @@
+{
+
+    "itemsList": [
+        { 
+            "isMany": 0,
+            "imgUrl": "../assets/icons@4x/com.tencent.mobileqq.png",
+            "name": "手机QQ",
+            "desc": "在吗？",
+            "packageName": "com.tencent.mobileqq",
+            "updateTime": "2020.01.01",
+            "note": ""
+        },
+        { 
+            "isMany": 0,
+            "imgUrl": "../assets/icons@4x/com.tencent.minihd.qq.png",
+            "name": "QQ HD",
+            "desc": "在鸭！",
+            "packageName": "com.tencent.minihd.qq",
+            "updateTime": "2020.01.01",
+            "note": ""
+        },
+        { 
+            "isMany": 0,
+            "imgUrl": "../assets/icons@4x/com.tencent.tim.png",
+            "name": "TIM",
+            "desc": "好久不见，帮我个小忙吧",
+            "packageName": "com.tencent.tim",
+            "updateTime": "2020.01.01",
+            "note": ""
+        },
+        { 
+            "isMany": 0,
+            "imgUrl": "../assets/icons@4x/com.baidu.homework.png",
+            "name": "作业帮",
+            "desc": "满脸写着对作业的喜爱",
+            "packageName": "com.baidu.homework",
+            "updateTime": "2021.12.12",
+            "note": ""
+        },
+        { 
+            "isMany": 0,
+            "imgUrl": "../assets/icons@4x/com.zcool.community.png",
+            "name": "站酷",
+            "desc": "不求最强，但求最秃",
+            "packageName": "com.zcool.community",
+            "updateTime": "2020.01.01",
+            "note": ""
+        },
+        { 
+            "isMany": 0,
+            "imgUrl": "../assets/icons@4x/com.tencent.weread.png",
+            "name": "微信读书",
+            "desc": "太卷怎么办？读书破万卷！",
+            "packageName": "com.tencent.weread",
+            "updateTime": "2021.11.26",
+            "note": "强烈推荐这个良心app"
+        },
+        { 
+            "isMany": 0,
+            "imgUrl": "../assets/icons@4x/com.netease.vopen.png",
+            "name": "网易公开课",
+            "desc": "听君一席话，省我十本书",
+            "packageName": "com.netease.vopen",
+            "updateTime": "2020.01.01",
+            "note": ""
+        },
+        { 
+            "isMany": 0,
+            "imgUrl": "../assets/icons@4x/com.zhihu.android.png",
+            "name": "知乎",
+            "desc": "听君一席话，胜听一席话",
+            "packageName": "com.zhihu.android",
+            "updateTime": "2020.01.01",
+            "note": ""
+        },
+        { 
+            "isMany": 1,
+            "iconbox": [
+                {
+                    "imgUrl": "../assets/icons@4x/com.tencent.mm.png",
+                    "name": "微信",
+                    "desc": "请保持网线距离1米以上",
+                    "packageName": "com.tencent.mm",
+                    "updateTime": "2021.12.12",
+                    "note": ""
+                },
+                {
+                    "imgUrl": "../assets/icons@4x/com.tencent.mm2.png",
+                    "name": "微信",
+                    "desc": "你听我狡辩",
+                    "packageName": "com.tencent.mm2",
+                    "updateTime": "2021.12.12",
+                    "note": ""
+                },
+                {
+                    "imgUrl": "../assets/icons@4x/com.tencent.mm3.png",
+                    "name": "微信",
+                    "desc": "别秀了，你俩快分开吧",
+                    "packageName": "com.tencent.mm3",
+                    "updateTime": "2021.12.12",
+                    "note": ""
+                },
+                {
+                    "imgUrl": "../assets/icons@4x/com.tencent.mm_x.png",
+                    "name": "微信（弃用方案）",
+                    "desc": "莫发语音 ❌",
+                    "packageName": "com.tencent.mm_x",
+                    "updateTime": "2019.12.21",
+                    "note": "早先设计这个图标，是因为经常收到很长的语音消息，有些还是方言的，很难听懂对方在讲什么，需要反复听好几遍才行，所以对于这种明明可以打字却又偷懒，致使别人麻烦的行为很不喜欢。但是后来发现，还有很多老人是本来就不擅长打字的，甚至不能很好的识字，语音几乎是他们唯一的网络交流方式，那么这个拒绝语音的图标就是对他们的排斥了，故而不再使用这个图标设计方案。"
+                }
+            ]
+        },
+        { 
+            "isMany": 0,
+            "imgUrl": "../assets/icons@4x/com.tencent.wework.png",
+            "name": "企业微信",
+            "desc": "我要摸鱼，摸四条！",
+            "packageName": "com.tencent.wework",
+            "updateTime": "2021.12.05",
+            "note": "郑重声明：我木有摸鱼，一条都没摸（认真脸）！"
+        },
+        { 
+            "isMany": 0,
+            "imgUrl": "../assets/icons@4x/tv.danmaku.bili.png",
+            "name": "哔哩哔哩",
+            "desc": "yyds：永远单身",
+            "packageName": "tv.danmaku.bili",
+            "updateTime": "2021.12.16",
+            "note": ""
+        },
+        { 
+            "isMany": 0,
+            "imgUrl": "../assets/icons@4x/com.taobao.taobao.png",
+            "name": "淘宝",
+            "desc": "这爪，由不得我",
+            "packageName": "com.taobao.taobao",
+            "updateTime": "2021.12.01",
+            "note": ""
+        },
+        { 
+            "isMany": 0,
+            "imgUrl": "../assets/icons@4x/com.eg.android.AlipayGphone.png",
+            "name": "支付宝",
+            "desc": "做梦又不花钱",
+            "packageName": "com.eg.android.AlipayGphone",
+            "updateTime": "2021.12.06",
+            "note": ""
+        },
+        { 
+            "isMany": 0,
+            "imgUrl": "../assets/icons@4x/com.sina.weibo.png",
+            "name": "新浪微博",
+            "desc": "这都是大鹏的瓜",
+            "packageName": "com.sina.weibo",
+            "updateTime": "2020.01.01",
+            "note": ""
+        },
+        { 
+            "isMany": 1,
+            "iconbox": [
+                {
+                    "imgUrl": "../assets/icons@4x/com.netease.cloudmusic.png",
+                    "name": "网易云音乐",
+                    "desc": "无词达意，有词负念",
+                    "packageName": "com.netease.cloudmusic",
+                    "updateTime": "2020.01.01",
+                    "note": ""
+                },
+                {
+                    "imgUrl": "../assets/icons@4x/com.netease.cloudmusic2.png",
+                    "name": "网易云音乐",
+                    "desc": "我来看看评论而已",
+                    "packageName": "com.netease.cloudmusic2",
+                    "updateTime": "2020.01.01",
+                    "note": ""
+                },
+                {
+                    "imgUrl": "../assets/icons@4x/com.netease.cloudmusic3.png",
+                    "name": "网易云音乐",
+                    "desc": "网抑云时间到",
+                    "packageName": "com.netease.cloudmusic3",
+                    "updateTime": "2020.01.01",
+                    "note": ""
+                }
+            ]
+        },
+        { 
+            "isMany": 0,
+            "imgUrl": "../assets/icons@4x/com.tencent.qqmusic.png",
+            "name": "QQ音乐",
+            "desc": "歌别三日，当充个会员",
+            "packageName": "com.tencent.qqmusic",
+            "updateTime": "2020.01.01",
+            "note": ""
+        },
+        { 
+            "isMany": 0,
+            "imgUrl": "../assets/icons@4x/com.coolapk.market.png",
+            "name": "酷安",
+            "desc": "有...有女的吗？",
+            "packageName": "com.coolapk.market",
+            "updateTime": "2020.01.01",
+            "note": ""
+        },
+        { 
+            "isMany": 0,
+            "imgUrl": "../assets/icons@4x/cn.wps.moffice_eng.png",
+            "name": "WPS",
+            "desc": "PS？我会呀",
+            "packageName": "cn.wps.moffice_eng",
+            "updateTime": "2020.01.01",
+            "note": ""
+        },
+        { 
+            "isMany": 0,
+            "imgUrl": "../assets/icons@4x/cn.com.langeasy.LangEasyLexis.png",
+            "name": "不背单词",
+            "desc": "老子信了你滴邪！",
+            "packageName": "cn.com.langeasy.LangEasyLexis",
+            "updateTime": "2020.01.01",
+            "note": ""
+        },
+        { 
+            "isMany": 0,
+            "imgUrl": "../assets/icons@4x/com.baidu.netdisk.png",
+            "name": "百度网盘",
+            "desc": "会员快乐盘",
+            "packageName": "com.baidu.netdisk",
+            "updateTime": "2020.01.01",
+            "note": ""
+        },
+        { 
+            "isMany": 0,
+            "imgUrl": "../assets/icons@4x/com.adsk.sketchbook.png",
+            "name": "SketchBook",
+            "desc": "画画，要有灵魂",
+            "packageName": "com.adsk.sketchbook",
+            "updateTime": "2020.01.01",
+            "note": ""
+        },
+        { 
+            "isMany": 0,
+            "imgUrl": "../assets/icons@4x/com.baidu.BaiduMap.png",
+            "name": "百度地图",
+            "desc": "逃不出我的爪心",
+            "packageName": "com.baidu.BaiduMap",
+            "updateTime": "2020.01.01",
+            "note": ""
+        },
+        { 
+            "isMany": 0,
+            "imgUrl": "../assets/icons@4x/com.autonavi.minimap.png",
+            "name": "高德地图",
+            "desc": "高__地图持续为您导航",
+            "packageName": "com.autonavi.minimap",
+            "updateTime": "2020.01.01",
+            "note": ""
+        },
+        { 
+            "isMany": 0,
+            "imgUrl": "../assets/icons@4x/com.psyone.brainmusic.png",
+            "name": "小睡眠",
+            "desc": "我太想睡觉了",
+            "packageName": "com.psyone.brainmusic",
+            "updateTime": "2020.01.01",
+            "note": ""
+        },
+        { 
+            "isMany": 0,
+            "imgUrl": "../assets/icons@4x/com.netease.edu.ucmooc.png",
+            "name": "中国大学MOOC",
+            "desc": "可是学习太特么有意思了",
+            "packageName": "com.netease.edu.ucmooc",
+            "updateTime": "2020.01.01",
+            "note": ""
+        },
+        { 
+            "isMany": 0,
+            "imgUrl": "../assets/icons@4x/cn.xuexi.android.png",
+            "name": "学习强国",
+            "desc": "为中华崛起而读书！",
+            "packageName": "cn.xuexi.android",
+            "updateTime": "2021.12.12",
+            "note": "梦想从学习开始，事业从实践起步。——习近平"
+        },
+        { 
+            "isMany": 0,
+            "imgUrl": "../assets/icons@4x/com.quark.browser.png",
+            "name": "夸克",
+            "desc": "上下奇粲底顶，搜索无一入味",
+            "packageName": "com.quark.browser",
+            "updateTime": "2021.12.08",
+            "note": ""
+        },
+        { 
+            "isMany": 0,
+            "imgUrl": "../assets/icons@4x/com.UCMobile.png",
+            "name": "UC浏览器",
+            "desc": "吓得我瓜子都掉了",
+            "packageName": "com.UCMobile",
+            "updateTime": "2020.01.01",
+            "note": ""
+        },
+        { 
+            "isMany": 0,
+            "imgUrl": "../assets/icons@4x/com.github.android.png",
+            "name": "GitHub",
+            "desc": "PHP是世界上最好的语言！",
+            "packageName": "com.github.android",
+            "updateTime": "2020.01.01",
+            "note": "突然看到《元气骑士》，于是就模仿着做了这个图标"
+        },
+        { 
+            "isMany": 0,
+            "imgUrl": "../assets/icons@4x/com.android.settings.png",
+            "name": "设置",
+            "desc": "设置不喝酒，喝酒不设置",
+            "packageName": "com.android.settings",
+            "updateTime": "2020.01.01",
+            "note": ""
+        },
+        { 
+            "isMany": 1,
+            "iconbox": [
+                {
+                    "imgUrl": "../assets/icons@4x/com.huawei.hidisk.png",
+                    "name": "文件管理",
+                    "desc": "真的啥都没有！",
+                    "packageName": "com.huawei.hidisk",
+                    "updateTime": "2020.01.01",
+                    "note": ""
+                },
+                {
+                    "imgUrl": "../assets/icons@4x/com.huawei.hidisk2.png",
+                    "name": "文件管理",
+                    "desc": "惊喜！猜是0分还是100分",
+                    "packageName": "com.huawei.hidisk2",
+                    "updateTime": "2020.01.01",
+                    "note": ""
+                }
+            ]
+        },
+        { 
+            "isMany": 0,
+            "imgUrl": "../assets/icons@4x/com.android.gallery3d.png",
+            "name": "相册",
+            "desc": "我有那么多照片，就是缺你的",
+            "packageName": "com.android.gallery3d",
+            "updateTime": "2020.01.01",
+            "note": ""
+        },
+        { 
+            "isMany": 0,
+            "imgUrl": "../assets/icons@4x/com.android.browser.png",
+            "name": "浏览器",
+            "desc": "现已推出404尊享服务",
+            "packageName": "com.android.browser",
+            "updateTime": "2020.01.01",
+            "note": ""
+        },
+        { 
+            "isMany": 1,
+            "iconbox": [
+                {
+                    "imgUrl": "../assets/icons@4x/com.android.contacts.png",
+                    "name": "通讯录",
+                    "desc": "抓住了未来！",
+                    "packageName": "com.android.contacts",
+                    "updateTime": "2020.01.01",
+                    "note": ""
+                },
+                {
+                    "imgUrl": "../assets/icons@4x/com.android.contacts2.png",
+                    "name": "通讯录",
+                    "desc": "人生啊~",
+                    "packageName": "com.android.contacts2",
+                    "updateTime": "2020.01.01",
+                    "note": ""
+                }
+            ]
+        },
+        { 
+            "isMany": 0,
+            "imgUrl": "../assets/icons@4x/com.android.calculator.png",
+            "name": "计算器",
+            "desc": "取个整，一零二四吧",
+            "packageName": "com.android.calculator",
+            "updateTime": "2020.01.01",
+            "note": ""
+        },
+        { 
+            "isMany": 0,
+            "imgUrl": "../assets/icons@4x/com.huawei.notepad.png",
+            "name": "便签",
+            "desc": "今日事，今日毕",
+            "packageName": "com.huawei.notepad",
+            "updateTime": "2020.01.01",
+            "note": ""
+        },
+        { 
+            "isMany": 0,
+            "imgUrl": "../assets/icons@4x/com.android.documentsui.png",
+            "name": "下载",
+            "desc": "你想要的，都在这里",
+            "packageName": "com.android.documentsui",
+            "updateTime": "2020.01.01",
+            "note": ""
+        },
+        { 
+            "isMany": 0,
+            "imgUrl": "../assets/icons@4x/com.huawei.compass.png",
+            "name": "指南针",
+            "desc": "歪个头很可爱？",
+            "packageName": "com.huawei.compass",
+            "updateTime": "2020.01.01",
+            "note": ""
+        },
+        { 
+            "isMany": 0,
+            "imgUrl": "../assets/icons@4x/com.huawei.calendar.png",
+            "name": "日历",
+            "desc": "面包总会有的",
+            "packageName": "com.huawei.calendar",
+            "updateTime": "2020.01.01",
+            "note": ""
+        },
+        { 
+            "isMany": 0,
+            "imgUrl": "../assets/icons@4x/com.android.deskclock.png",
+            "name": "时钟",
+            "desc": "修仙不能停",
+            "packageName": "com.android.deskclock",
+            "updateTime": "2020.01.01",
+            "note": ""
+        },
+        { 
+            "isMany": 0,
+            "imgUrl": "../assets/icons@4x/com.android.contacts.activities.DialtactsActivity.png",
+            "name": "电话",
+            "desc": "我心爱的BB机",
+            "packageName": "com.android.contacts.activities.DialtactsActivity",
+            "updateTime": "2020.01.01",
+            "note": ""
+        },
+        { 
+            "isMany": 0,
+            "imgUrl": "../assets/icons@4x/com.android.mms.png",
+            "name": "短信",
+            "desc": "谨防电信诈骗！",
+            "packageName": "com.android.mms",
+            "updateTime": "2021.12.10",
+            "note": ""
+        },
+        { 
+            "isMany": 0,
+            "imgUrl": "../assets/icons@4x/com.huawei.camera.png",
+            "name": "相机",
+            "desc": "浴霸在此，谁来shower？",
+            "packageName": "com.huawei.camera",
+            "updateTime": "2020.01.01",
+            "note": "当初设计时还有华为手机浴霸相机的梗，如今已经过时了，有空再设计新的。"
+        },
+        { 
+            "isMany": 0,
+            "imgUrl": "../assets/icons@4x/com.huawei.appmarket.png",
+            "name": "应用商店",
+            "desc": "你需要的，都在这里",
+            "packageName": "com.huawei.appmarket",
+            "updateTime": "2020.01.01",
+            "note": "当初设计时还有华为手机浴霸相机的梗，如今已经过时了，有空再设计新的。"
+        },
+        { 
+            "isMany": 0,
+            "imgUrl": "../assets/icons@4x/com.android.mediacenter.png",
+            "name": "音乐",
+            "desc": "为生活的每一刻伴奏",
+            "packageName": "com.android.mediacenter",
+            "updateTime": "2020.01.01",
+            "note": ""
+        },
+        { 
+            "isMany": 1,
+            "iconbox": [
+                {
+                    "imgUrl": "../assets/icons@4x/com.huawei.himovie.png",
+                    "name": "华为视频",
+                    "desc": "看遍全世界",
+                    "packageName": "com.huawei.himovie",
+                    "updateTime": "2020.01.01",
+                    "note": ""
+                },
+                {
+                    "imgUrl": "../assets/icons@4x/com.huawei.himovie.png",
+                    "name": "小米视频",
+                    "desc": "看遍全世界",
+                    "packageName": "com.miui.video",
+                    "updateTime": "2020.01.01",
+                    "note": "包名是com.miui.video，原设计是一个卡片组里放一个应用的几种版本的图标，所以包名都显示为第一个图标的，这里懒得改了。"
+                }
+            ]
+        },
+        { 
+            "isMany": 0,
+            "imgUrl": "../assets/icons@4x/com.android.hwmirror.png",
+            "name": "镜子",
+            "desc": "一度迷失自我",
+            "packageName": "com.android.hwmirror",
+            "updateTime": "2020.01.01",
+            "note": ""
+        },
+        { 
+            "isMany": 0,
+            "imgUrl": "../assets/icons@4x/com.hicloud.android.clone.png",
+            "name": "手机克隆",
+            "desc": "求求钉子户们快换机吧！",
+            "packageName": "com.hicloud.android.clone",
+            "updateTime": "2020.01.01",
+            "note": ""
+        },
+        { 
+            "isMany": 0,
+            "imgUrl": "../assets/icons@4x/com.huawei.android.tips.png",
+            "name": "玩机技巧",
+            "desc": "新手机很好玩哦",
+            "packageName": "com.huawei.android.tips",
+            "updateTime": "2020.01.01",
+            "note": ""
+        },
+        { 
+            "isMany": 0,
+            "imgUrl": "../assets/icons@4x/com.huawei.android.thememanager.png",
+            "name": "主题壁纸",
+            "desc": "大...大佬",
+            "packageName": "com.huawei.android.thememanager",
+            "updateTime": "2020.01.01",
+            "note": ""
+        },
+        { 
+            "isMany": 0,
+            "imgUrl": "../assets/icons@4x/com.huawei.android.thememanager.png",
+            "name": "主题壁纸",
+            "desc": "大...大佬",
+            "packageName": "com.huawei.android.thememanager1",
+            "updateTime": "2020.01.01",
+            "note": ""
+        },
+        { 
+            "isMany": 0,
+            "imgUrl": "../assets/icons@4x/com.android.email.png",
+            "name": "电子邮件",
+            "desc": "咕咕咕",
+            "packageName": "com.android.email",
+            "updateTime": "2020.01.01",
+            "note": ""
+        },
+        { 
+            "isMany": 0,
+            "imgUrl": "../assets/icons@4x/net.chiven.kaicons.png",
+            "name": "KA ICONS",
+            "desc": "咕咕咕",
+            "packageName": "net.chiven.yohoscrawl",
+            "updateTime": "2021.11.26",
+            "note": ""
+        }
+    ]
+}

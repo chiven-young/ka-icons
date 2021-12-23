@@ -1,0 +1,52 @@
+header, footer, .border-theme, .card-footer, .post-header h1 {
+    display: none !important;
+}
+.toTop {
+    position: fixed;
+    bottom: 16px;
+    right: 16px;
+    color: #333;
+    border: 1px solid rgba(128, 128, 128, 0.3);
+    height: 40px;
+    width: 40px;
+    border-radius: 60px;
+    text-align: center;
+    padding-top: 5px;
+    z-index: 998;
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+    backdrop-filter: saturate(180%) blur(20px);
+}
+.toTop .iconfont {
+    font-size: 26px;
+}
+.post-header {
+    border-bottom: none !important;
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+}
+.post-header .meta {
+    position: absolute;
+    width: 100%;
+    top: 16px;
+    z-index: -1;
+}
+.post-header time {
+    display: none !important;
+}
+@media (min-width: 768px) {
+    .pt-md-5, .py-md-5 {
+        padding-top: 1rem!important;
+    }
+}
+.btn-back {
+    z-index: 999;
+    position: absolute;
+    top: 12px;
+    left: 0;
+    font-size: 14px;
+    color: #999 !important;
+    display: none;
+}
+.btn-back .iconfont {
+    font-size: 24px;
+}

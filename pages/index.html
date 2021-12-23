@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="UTF-8" />
+        <meta content="width=device-width,user-scalable=no" name="viewport">
+        <meta name="keywords" content="一函碎念, 图标, 手机图标, app图标">
+        <meta name="description" content="《一函碎念》图标项目主页">
+        <title>一函碎念 - 每个图标，都有故事</title>
+        <link rel="stylesheet" href="../style/main.css" />
+        <link rel="stylesheet" href="//at.alicdn.com/t/font_2846982_m0ik62kqki8.css" />
+        <script src="../js/vue.min.js"></script>
+        <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+        <script src="https://unpkg.com/element-ui/lib/index.js"></script>
+        <!-- <script src="../js/api.js"></script> -->
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+        <style>
+            #app .el-collapse-item__header, .el-collapse-item__wrap {
+                background-color: transparent !important;
+            }
+            .card-scroll::-webkit-scrollbar { 
+                width: 0 !important;
+            }
+            #app .el-carousel__indicators--horizontal {
+                bottom: 30px;
+                right: 0;
+                left: auto;
+            }
+            #app .el-carousel__button {
+                width: 4px;
+                height: 4px;
+                border-radius: 2px;
+            }
+            .card-detail {
+                position: relative;
+                -webkit-backdrop-filter: saturate(180%) blur(20px);
+                backdrop-filter: saturate(180%) blur(20px);
+                background-color: rgba(255,255,255,0.72);
+                border-radius: 16px;
+                border: 1px solid rgba(255,255,255,0.62);
+                min-width: 300px;
+                max-width: 90%;
+                margin: unset !important;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%,-50%);
+            }
+            .card-detail .el-dialog__header {
+                display: none;
+            }
+            .card-detail .dialog-close {
+                position: absolute;
+                right: 20px;
+                top: 20px;
+                cursor: pointer;
+            }
+            .card-detail table td {
+                min-width: 90px;
+                vertical-align: initial;
+            }
+            .card-detail .el-dialog__body h1 {
+                color: #333;
+            }
+        </style>
+    </head>
+    <body>
+        <nav class="天杆">
+            <div class="nav-container container">
+                <a class="nav-logo" href="./index.html">
+                    <img src="../img/logo.png"/>
+                </a>
+                <div class="nav-main">
+                    <ul>
+                        <li><a href="./index.html">首页</a></li>
+                        <li><a href="./icons.html">浏览图标</a></li>
+                        <li><a href="./about.html">关于</a></li>
+                    </ul>
+                </div>
+                <a title="Github" class="nav-btn" target="_blank" href="https://gitee.com/chiven-young/Yo-ho-Scrawl-Icons"><i class="iconfont icon-github-fill"></i></a>
+            </div>
+        </nav>
+        <div class="画心" id="app">
+            <!-- <navbar></navbar> -->
+            <div class="impression">
+                <!-- <iframe src="http://v.bootstrapmb.com/2021/8/x10r811019/"></iframe> -->
+                <!-- <img src="img/cellphone-animate.svg"> -->
+                <div class="slogan">每个图标，都有故事</div>
+                <div class="btn-container">
+                    <a class="button hero-btn" href="./icons.html">浏览图标</a>
+                    <a class="button hero-btn primary" id="modalBtn">下载图标</a>
+                </div>
+            </div>
+            <!-- <div>
+                <div class="comments" v-if="commentsNum !='0'">
+                    <div>评论列表</div>
+                    <div class="comments-des" v-for="(comment, index) in comments" :key="index">
+                        <div class="comments-flex">
+                            <div class="comments-name">{{comment.author}}</div>
+                            <div>{{formatDate(comment.created)}}</div>
+                        </div>
+                        <div>{{comment.text}}</div>
+                        <div v-if="comment.replays">
+                            <div>{{comment.replays[0].author}}</div>
+                            <div>{{comment.replays[0].text}}</div>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+            <div class="container">
+                <div class="section-title">
+                    <span class="color-deep">更新了，</span><span class="color-shallow">看看这些新图标！<sup>1</sup></span>
+                </div>
+            </div>
+            <div class="card-scroll">
+                <div v-for="icon in icons.slice(0,3)" :key="icon.packageName" class="card-content">
+                    <div class="card-icon-wrapper">
+                        <img class="card-icon" v-bind:src="icon.imgUrl"/>
+                    </div>
+                    <div class="card-info">
+                        <div class="icon-des">{{icon.desc}}</div>
+                        <div class="text-small">{{icon.name}}</div>
+                        <div class="text-small">{{icon.packageName}}</div>
+                    </div>
+                </div>
+                <div class="card-content card-more">
+                    <div class="card-more-content">
+                        <span class="text-remind">{{updateTimeAll}}更新</span>
+                        <div style="font-size: 28px; font-weight: bold; padding: 6px 0 0 0;">{{icons.length}}<sub>个图标</sub></div>
+                        <div class="card-desc">本系列图标将在每周五更新</div>
+                        <a class="button hero-btn primary" href="./icons.html" style="position: absolute; bottom: 70px;">查看更多</a>
+                        <div class="text-small" style="position: absolute; bottom: 30px; margin: 0 auto; display: block;">DESIGNED BY CHIVEN</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="container">
+                <div class="text-small">向右滑动查看更多 >></div>
+                <br><br>
+                <div class="section-title">
+                    <span class="color-deep">手机主题！</span><span class="color-shallow">把故事装进手机里。</span>
+                </div>
+            </div>
+            <div class="card-scroll">
+                <div v-for="theme in themes" class="card-content themes">
+                    <el-carousel :interval="5000" arrow="always" class="card-img-wrapper">
+                        <el-carousel-item v-for="imgs in theme.images" :key="imgs">
+                            <div class="card-img" v-bind:style="{backgroundImage: 'url(' + imgs.imgUrl + ')'}"></div>
+                        </el-carousel-item>
+                    </el-carousel>
+                    <div class="card-info">
+                        <div class="text-small">{{theme.name}}</div>
+                        <span class="text-small opacity6"><i class="el-icon-user"></i> {{theme.author}}</span>&nbsp;&nbsp;
+                        <span class="text-small opacity6"><i class="el-icon-loading"></i> {{theme.status}}</span>&nbsp;&nbsp;
+                        <span class="text-small opacity6"><i class="el-icon-collection-tag"></i> v {{theme.version}}</span>&nbsp;&nbsp;
+                        <span class="text-small opacity6"><i class="el-icon-coin"></i> {{theme.price}}</span>&nbsp;&nbsp;
+                    </div>
+                    <a @click="dialogVisible = theme.name" class="dialog-btn-more"><i class="el-icon-circle-plus-outline"></i></a>
+                    <el-dialog
+                        v-bind:title="theme.name"
+                        :visible.sync="dialogVisible == theme.name"
+                        custom-class="card-detail"
+                        show-close="false"
+                        append-to-body="ture">
+                        <a @click="dialogVisible = ''" class="dialog-close"><i class="el-icon-close" style="font-size: 28px;"></i></a>
+                        <h1>{{theme.name}}</h1>
+                        <table border="0">
+                            <tr>
+                                <td><i class="el-icon-user"></i> 作者：</td>
+                                <td>{{theme.author}}</td>
+                            </tr>
+                            <tr>
+                                <td><i class="el-icon-collection-tag"></i> 版本：</td>
+                                <td>v {{theme.version}}</td>
+                            </tr>
+                            <tr>
+                                <td><i class="el-icon-time"></i> 更新时间：</td>
+                                <td>{{theme.updateTime}}</td>
+                            </tr>
+                            <tr>
+                                <td><i class="el-icon-document"></i> 主题介绍：</td>
+                                <td>{{theme.desc}}</td>
+                            </tr>
+                            <tr>
+                                <td><i class="el-icon-open"></i> 主题状态：</td>
+                                <td>{{theme.status}}</td>
+                            </tr>
+                            <tr>
+                                <td><i class="el-icon-pie-chart"></i> 开发进度：</td>
+                                <td>{{theme.percentage}}</td>
+                            </tr>
+                            <tr>
+                                <td><i class="el-icon-coin"></i> 价格：</td>
+                                <td>{{theme.price}}</td>
+                            </tr>
+                            <tr>
+                                <td><i class="el-icon-mobile"></i> 适配手机：</td>
+                                <td>{{theme.support}}</td>
+                            </tr>
+                        </table>
+                    </el-dialog>
+                </div>
+                <div class="card-content themes card-more">
+                    <div class="card-more-content">
+                        <span class="text-remind">欢迎创作</span>
+                        <div class="text-large" style="padding: 6px 0 0 0;">免费使用KA ICONS开发主题！<sup>2</sup></div>
+                        <div class="card-desc">欢迎主题开发者们使用本图标开发自己的主题，主题所获得利益归主题开发者所有。</div>
+                        <div style="position: absolute; bottom: 60px;">
+                            <a href="./copyright.html">版权声明</a>&emsp;<span class="split-line">|</span>&emsp; 
+                            <a href="./agreement.html">使用协议</a>
+                        </div>
+                        <div class="text-small" style="position: absolute; bottom: 30px; margin: 0 auto; display: block;">CREATED BY YOU</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="container">
+                <div class="text-small"><i class="el-icon-warning-outline"></i> 对于已经上线的主题，请前往对应手机主题商城搜索获取主题。</div>
+                <br><br>
+                <div>未来计划</div>
+                <div class="footnotes">
+                    1. 计划暂不绘制的图标:<br>
+                    大部分游戏APP，因为太花哨了不好画。<br>
+                    2. 计划暂不开发的主题类型:<br>
+                    暂不开发大主题，先做个图标主题再说。<br>
+                    3. 计划不支持的设备:<br>
+                    vivo,oppo<br>
+                    4. 还有什么计划？<br>
+                    没有了。
+                </div>
+                <footnotes-explain></footnotes-explain>
+            </div>
+            <download-dialog></download-dialog>
+            <footer-content></footer-content>
+        </div>
+        <script src="../js/components.js"></script>
+        <script src="../js/main.js"></script>
+    </body>
+</html>

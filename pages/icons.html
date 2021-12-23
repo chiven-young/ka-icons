@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8" />
+    <meta content="width=device-width,user-scalable=no" name="viewport">
+    <meta name="keywords" content="一函碎念, 图标, 手机图标, app图标">
+    <meta name="description" content="《一函碎念》图标项目主页">
+    <title>一函碎念</title>
+    <link rel="stylesheet" href="../style/main.css" />
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_2846982_m0ik62kqki8.css" />
+    <script src="../js/vue.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+    <script src="https://unpkg.com/element-ui/lib/index.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <style>
+        #app .el-carousel__container {
+            height: 352px;
+        }
+        #app .el-carousel__arrow i {
+            color: #666;
+        }
+        #app .el-carousel__arrow {
+            background-color: transparent;
+        }
+        #app .el-carousel__arrow:hover {
+            border: 1px solid #eee;
+            background-color: rgba(0, 0, 0,0.03);
+        }
+        #app .el-carousel__button {
+            width: 10px;
+        }
+        #app .el-carousel__indicator--horizontal {
+            padding: 12px 4px 26px 4px;
+        }
+        .card-detail {
+            position: relative;
+            -webkit-backdrop-filter: saturate(180%) blur(20px);
+            backdrop-filter: saturate(180%) blur(20px);
+            background-color: rgba(255,255,255,0.82);
+            border-radius: 16px;
+            border: 1px solid rgba(255,255,255,0.62);
+            min-width: 300px;
+            max-width: 90%;
+            margin: unset !important;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+        }
+        .card-detail .el-dialog__header {
+            display: none;
+        }
+        .card-detail .dialog-close {
+            position: absolute;
+            right: 20px;
+            top: 20px;
+            cursor: pointer;
+        }
+        .card-detail table td {
+            min-width: 90px;
+            vertical-align: initial;
+        }
+        .card-detail .el-dialog__body h1 {
+            color: #333;
+        }
+        .comment-detail .el-dialog__header {
+            display: none;
+        }
+        .comment-detail .el-dialog__body {
+            padding: 0;
+            height: 100%;
+        }
+        .comment-detail .dialog-close {
+            position: absolute;
+            left: 20px;
+            top: 20px;
+            padding: 2px 10px;
+            background-color: rgba(255,255,255,0.06);
+            -webkit-backdrop-filter: saturate(180%) blur(20px);
+            backdrop-filter: saturate(180%) blur(20px);
+            border: 1px solid rgba(128,128,128,0.3);
+            border-radius: 60px;
+            cursor: pointer;
+        }
+        .el-dropdown-menu__item a {
+            font-size: 12px;
+            color: rgba(0,0,0,0.6);
+        }
+    </style>
+</head>
+<body>
+    <nav class="天杆">
+        <div class="nav-container container">
+            <a class="nav-logo" href="./index.html">
+                <img src="../img/logo.png"/>
+            </a>
+            <div class="nav-main">
+                <ul>
+                    <li><a href="./index.html">首页</a></li>
+                    <li><a href="./icons.html">浏览图标</a></li>
+                    <li><a href="./about.html">关于</a></li>
+                </ul>
+            </div>
+            <a title="Github" class="nav-btn" target="_blank" href="https://gitee.com/chiven-young/Yo-ho-Scrawl-Icons"><i class="iconfont icon-github-fill"></i></a>
+        </div>
+    </nav>
+    <div class="画心" id="app">
+        <!-- <navbar></navbar> -->
+        <div class="titlebar">
+            <div class="container">
+                <a href="./index.html" class="titlebar-title">一函碎念</a>
+                <div class="titlebar-btn-container">
+                    <span class="btn-item">
+                        <a href="./copyright.html">版权声明</a>
+                        <a href="./agreement.html">使用协议</a>
+                    </span>
+                    <el-dropdown trigger="click" class="btn-more" style="display: none;">
+                        <span class="el-dropdown-link">
+                          <i class="el-icon-arrow-down el-icon--right"></i>
+                        </span>
+                        <el-dropdown-menu slot="dropdown">
+                          <el-dropdown-item><a href="./copyright.html">版权声明</a></el-dropdown-item>
+                          <el-dropdown-item><a href="./agreement.html">使用协议</a></el-dropdown-item>
+                        </el-dropdown-menu>
+                    </el-dropdown>
+                    &nbsp; &nbsp; 
+                    <a class="button titlebar-btn" @click="commentDialogVisible = true"><i class="el-icon-chat-dot-square"></i> 评论</a>&nbsp; 
+                    <a class="button titlebar-btn primary" id="modalBtn" style="cursor: pointer;"><i class="el-icon-download"></i> 下载</a>
+                </div>
+            </div>
+        </div>
+        <el-dialog
+            title="评论"
+            :visible.sync="commentDialogVisible"
+            append-to-body="ture"
+            custom-class="comment-detail"
+            fullscreen="ture">
+            <a @click="commentDialogVisible = false" class="dialog-close"><i class="el-icon-back" style="font-size: 28px;"></i></a>
+            <iframe id="comment-iframe" src="https://www.chiven.net/archives/yo-ho-scrawl-icons-comments.html" style="width: 100%; height: 100%; border: none;"></iframe>
+        </el-dialog>
+        <div class="container">
+            <div class="footnotes" style="padding-bottom: 6px;">
+                <i class="el-icon-time"></i>&nbsp;<span>更新时间：{{updateTimeAll}}</span><br>
+                <i class="el-icon-finished"></i>&nbsp;<span>图标数量：{{icons.length}}（不含多版本）</span><br>
+                <i class="el-icon-document-copy"></i>&nbsp;<span>部分图标有多种版本，可左右切换查看。</span><br>
+                <i class="el-icon-thumb"></i>&nbsp;<span>点击图标可查看详细信息。</span>
+            </div>
+            <div class="icons-list-container">
+                <div v-for="item in icons" class="icons-list-card-content">
+                    <template v-if="!item.isMany">
+                        <div class="card-icon-wrapper">
+                            <!-- <img v-bind:src="item.imgUrl" class="card-icon" /> -->
+                            <a v-bind:style="{backgroundImage: 'url(' + item.imgUrl + ')'}" @click="dialogVisible = item.packageName" class="card-icon" title="点击查看详情"></a>
+                        </div>
+                        <div class="card-info">
+                            <div class="icon-des">{{item.desc}}</div>
+                            <div class="text-small" v-bind:title='"应用名称："+item.name'>{{item.name}}</div>
+                            <div class="text-small" v-bind:title='"应用包名："+item.packageName'>{{item.packageName}}</div>
+                            <a @click="dialogVisible = item.packageName" class="open-dialog text-small">详情<i class="el-icon-d-arrow-right"></i></a>
+                        </div>
+                        <el-dialog
+                            v-bind:title="item.name"
+                            :visible.sync="dialogVisible == item.packageName"
+                            custom-class="card-detail"
+                            show-close="false"
+                            append-to-body="ture">
+                            <a @click="dialogVisible = ''" class="dialog-close"><i class="el-icon-close" style="font-size: 28px;"></i></a>
+                            <h1>{{item.name}}</h1>
+                            <table border="0">
+                                <tr>
+                                    <td><i class="el-icon-time"></i>&nbsp;更新时间：</td>
+                                    <td>{{item.updateTime}}</td>
+                                </tr>
+                                <tr>
+                                    <td><i class="el-icon-box"></i>&nbsp;应用包名：</td>
+                                    <td>{{item.packageName}}</td>
+                                </tr>
+                                <tr>
+                                    <td><i class="el-icon-document"></i>&nbsp;设计备注：</td>
+                                    <td>{{item.note}}</td>
+                                </tr>
+                            </table>
+                        </el-dialog>
+                    </template>
+                    <template v-else>
+                        <el-carousel indicator-position="outside" arrow="always">
+                            <el-carousel-item v-for="item2 in item.iconbox" :key="item2">
+                                <div class="card-icon-wrapper">
+                                    <!-- <img v-bind:src="item2.imgUrl" class="card-icon" /> -->
+                                    <a v-bind:style="{backgroundImage: 'url(' + item2.imgUrl + ')'}" @click="dialogVisible = item2.packageName" class="card-icon" title="点击查看详情"></a>
+                                </div>
+                                <div class="card-info">
+                                    <div class="icon-des">{{item2.desc}}</div>
+                                    <div class="text-small" v-bind:title='"应用名称："+item2.name'>{{item2.name}}</div>
+                                    <div class="text-small" v-bind:title='"应用包名："+item.iconbox[0].packageName'>{{item.iconbox[0].packageName}}</div>
+                                    <a @click="dialogVisible = item2.packageName" class="open-dialog text-small">详情<i class="el-icon-d-arrow-right"></i></a>
+                                </div>
+                                <el-dialog
+                                    v-bind:title="item2.name"
+                                    :visible.sync="dialogVisible == item2.packageName"
+                                    custom-class="card-detail"
+                                    show-close="false"
+                                    append-to-body="ture">
+                                    <a @click="dialogVisible = ''" class="dialog-close"><i class="el-icon-close" style="font-size: 28px;"></i></a>
+                                    <h1>{{item2.name}}</h1>
+                                    <table border="0">
+                                        <tr>
+                                            <td><i class="el-icon-time"></i>&nbsp;更新时间：</td>
+                                            <td>{{item2.updateTime}}</td>
+                                        </tr>
+                                        <tr>
+                                            <td><i class="el-icon-box"></i>&nbsp;应用包名：</td>
+                                            <td>{{item.iconbox[0].packageName}}</td>
+                                        </tr>
+                                        <tr>
+                                            <td><i class="el-icon-document"></i>&nbsp;设计备注：</td>
+                                            <td>{{item2.note}}</td>
+                                        </tr>
+                                    </table>
+                                </el-dialog>
+                            </el-carousel-item>
+                        </el-carousel>
+                    </template>
+                </div>
+            </div>
+            <footnotes-explain></footnotes-explain>
+        </div>
+        <download-dialog></download-dialog>
+        <footer-content></footer-content>
+    </div>
+    <script src="../js/components.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+</html>
