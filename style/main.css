@@ -76,6 +76,7 @@ p a {
     backdrop-filter: saturate(180%) blur(20px);
     -webkit-backdrop-filter: saturate(180%) blur(20px);
     border-bottom: 1px solid rgba(0,0,0,0.72);
+    position: fixed;
 }
 .天杆 a {
     color: #fff;
@@ -151,12 +152,19 @@ p a {
     width: 100%;
     height: 500px;
     text-align: center;
-    background-image: url("https://cdn.pixabay.com/photo/2021/12/01/18/17/cat-6838844__480.jpg");
+    background-image: url("https://images.pexels.com/photos/210158/pexels-photo-210158.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500");
     background-repeat: no-repeat;
     background-position: center center;
-    background-size: 100% auto;
+    background-size: cover;
     margin-bottom: 50px;
     position: relative;
+    display: flex;
+    display: -webkit-flex;
+    align-items: center;
+    justify-content: center;
+}
+.impression .impression-content {
+    height: auto;
 }
 .impression iframe {
     position: absolute;
@@ -169,15 +177,9 @@ p a {
 .impression .slogan {
     font-size: 48px;
     font-weight: bold;
-    z-index: 2;
-    position: absolute;
-    top: 100px;
-    width: 100%;
 }
-.impression .btn-container {
-    position: absolute;
-    top: 340px;
-    width: 100%;
+.impression-desc {
+    padding: 8px 0 24px 0;
 }
 .button {
     cursor: pointer;
