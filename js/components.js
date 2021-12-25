@@ -40,23 +40,16 @@ Vue.component('footer-content', {
 })
 
 // 下载弹窗
-Vue.component('download-dialog',{
-    template: `<div id="simpleModal" class="modal">
-                <div class="modal-content">
-                    <div class="modal-body">
-                        <div class="modal-header">
-                            <span>下载图标</span>
-                            <i class="closeBtn iconfont icon-close"></i>
-                        </div>
-                        <p>在下载前请认真阅读《使用协议》，若您已开始下载，则表明您已同意该协议。</p>
-                        <div>
-                            <a href="./agreement.html">使用协议</a>&emsp;<span class="split-line">|</span>&emsp; 
-                            <a href="./copyright.html">版权声明</a>
-                        </div><br>
-                        <p>链接:<a target="_blank" href="https://pan.baidu.com/s/1hOuUiqa56yyjBpu9PZWsTQ">https://pan.baidu.com/s/1hOuUiqa56yyjBpu9PZWsTQ</a> 提取码:4sji</p>
-                    </div>
-                </div>
-            </div>`
+Vue.component('download-dialog-content',{
+    template: `<div>
+    <h1>下载图标</h1>
+        <p>在下载前请认真阅读《使用协议》，若您已开始下载，则表明您已同意该协议。</p>
+        <div>
+            <a href="./agreement.html">使用协议</a>&emsp;<span class="split-line">|</span>&emsp; 
+            <a href="./copyright.html">版权声明</a>
+        </div><br>
+        <p>链接:<a target="_blank" href="https://pan.baidu.com/s/1hOuUiqa56yyjBpu9PZWsTQ">https://pan.baidu.com/s/1hOuUiqa56yyjBpu9PZWsTQ</a> 提取码:4sji</p>
+    </div>`
 })
 
 // 图标声明脚注

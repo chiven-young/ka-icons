@@ -90,10 +90,19 @@
                     <div class="impression-desc">每个图标，都有故事</div>
                     <div class="btn-container">
                         <a class="button hero-btn primary" href="./icons.html">浏览图标</a>
-                        <a class="button hero-btn" id="modalBtn">下载图标</a>
+                        <a @click="downloadDialogVisible = true" class="button hero-btn">下载图标</a>
                     </div>
                 </div>
             </div>
+            <el-dialog
+                title="下载图标"
+                :visible.sync="downloadDialogVisible"
+                custom-class="card-detail"
+                show-close="false"
+                append-to-body="ture">
+                <a @click="downloadDialogVisible = false" class="dialog-close"><i class="el-icon-close" style="font-size: 28px;"></i></a>
+                <download-dialog-content></download-dialog-content>
+            </el-dialog>
             <div class="container">
                 <div class="section-title">
                     <span class="color-deep">更新了，</span><span class="color-shallow">看看这些新图标！<sup>1</sup></span>

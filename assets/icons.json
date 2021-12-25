@@ -308,7 +308,7 @@
             "desc": "PHP是世界上最好的语言！",
             "packageName": "com.github.android",
             "updateTime": "2020.01.01",
-            "note": "突然看到《元气骑士》，于是就模仿着做了这个图标"
+            "note": "突然看到《元气骑士》，于是就模仿着做了这个图标。"
         },
         { 
             "isMany": 0,
@@ -532,15 +532,6 @@
             "name": "主题壁纸",
             "desc": "大...大佬",
             "packageName": "com.huawei.android.thememanager",
-            "updateTime": "2020.01.01",
-            "note": ""
-        },
-        { 
-            "isMany": 0,
-            "imgUrl": "../assets/icons@4x/com.huawei.android.thememanager.png",
-            "name": "主题壁纸",
-            "desc": "大...大佬",
-            "packageName": "com.huawei.android.thememanager1",
             "updateTime": "2020.01.01",
             "note": ""
         },
