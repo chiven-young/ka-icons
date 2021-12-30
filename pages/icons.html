@@ -32,20 +32,6 @@
         #app .el-carousel__indicator--horizontal {
             padding: 12px 4px 26px 4px;
         }
-        .card-detail {
-            position: relative;
-            -webkit-backdrop-filter: saturate(180%) blur(20px);
-            backdrop-filter: saturate(180%) blur(20px);
-            background-color: rgba(255,255,255,0.82);
-            border-radius: 16px;
-            border: 1px solid rgba(255,255,255,0.62);
-            min-width: 300px;
-            max-width: 90%;
-            margin: unset !important;
-            left: 50%;
-            top: 50%;
-            transform: translate(-50%,-50%);
-        }
         .card-detail .el-dialog__header {
             display: none;
         }
@@ -54,10 +40,6 @@
             right: 20px;
             top: 20px;
             cursor: pointer;
-        }
-        .card-detail table td {
-            min-width: 90px;
-            vertical-align: initial;
         }
         .card-detail .el-dialog__body h1 {
             color: #333;
@@ -181,15 +163,15 @@
                             <h1>{{item.name}}</h1>
                             <table border="0">
                                 <tr>
-                                    <td><i class="el-icon-time"></i>&nbsp;更新时间：</td>
+                                    <td><i class="el-icon-time"></i>更新时间：</td>
                                     <td>{{item.updateTime}}</td>
                                 </tr>
                                 <tr>
-                                    <td><i class="el-icon-box"></i>&nbsp;应用包名：</td>
+                                    <td><i class="el-icon-box"></i>应用包名：</td>
                                     <td>{{item.packageName}}</td>
                                 </tr>
                                 <tr>
-                                    <td><i class="el-icon-document"></i>&nbsp;设计备注：</td>
+                                    <td><i class="el-icon-document"></i>设计备注：</td>
                                     <td>{{item.note}}</td>
                                 </tr>
                             </table>
@@ -217,15 +199,15 @@
                                     <h1>{{item2.name}}</h1>
                                     <table border="0">
                                         <tr>
-                                            <td><i class="el-icon-time"></i>&nbsp;更新时间：</td>
+                                            <td><i class="el-icon-time"></i>更新时间：</td>
                                             <td>{{item2.updateTime}}</td>
                                         </tr>
                                         <tr>
-                                            <td><i class="el-icon-box"></i>&nbsp;应用包名：</td>
+                                            <td><i class="el-icon-box"></i>应用包名：</td>
                                             <td>{{item.iconbox[0].packageName}}</td>
                                         </tr>
                                         <tr>
-                                            <td><i class="el-icon-document"></i>&nbsp;设计备注：</td>
+                                            <td><i class="el-icon-document"></i>设计备注：</td>
                                             <td>{{item2.note}}</td>
                                         </tr>
                                     </table>
@@ -259,15 +241,15 @@
                             <h1>{{item.name}}</h1>
                             <table border="0">
                                 <tr>
-                                    <td><i class="el-icon-time"></i>&nbsp;更新时间：</td>
+                                    <td><i class="el-icon-time"></i>更新时间：</td>
                                     <td>{{item.updateTime}}</td>
                                 </tr>
                                 <tr>
-                                    <td><i class="el-icon-box"></i>&nbsp;应用包名：</td>
+                                    <td><i class="el-icon-box"></i>应用包名：</td>
                                     <td>{{item.packageName}}</td>
                                 </tr>
                                 <tr>
-                                    <td><i class="el-icon-document"></i>&nbsp;设计备注：</td>
+                                    <td><i class="el-icon-document"></i>设计备注：</td>
                                     <td>{{item.note}}</td>
                                 </tr>
                             </table>
@@ -296,15 +278,15 @@
                                     <h1>{{item2.name}}</h1>
                                     <table border="0">
                                         <tr>
-                                            <td><i class="el-icon-time"></i>&nbsp;更新时间：</td>
+                                            <td><i class="el-icon-time"></i>更新时间：</td>
                                             <td>{{item2.updateTime}}</td>
                                         </tr>
                                         <tr>
-                                            <td><i class="el-icon-box"></i>&nbsp;应用包名：</td>
+                                            <td><i class="el-icon-box"></i>应用包名：</td>
                                             <td>{{item.iconbox[0].packageName}}</td>
                                         </tr>
                                         <tr>
-                                            <td><i class="el-icon-document"></i>&nbsp;设计备注：</td>
+                                            <td><i class="el-icon-document"></i>设计备注：</td>
                                             <td>{{item2.note}}</td>
                                         </tr>
                                     </table>

@@ -548,3 +548,27 @@ p a {
     opacity: 0.8;
 }
 /* title-bar end--------------------*/
+
+/* 对话框 */
+.card-detail {
+    position: relative !important;
+    -webkit-backdrop-filter: saturate(180%) blur(20px) !important;
+    backdrop-filter: saturate(180%) blur(20px) !important;
+    background-color: rgba(255,255,255,0.82) !important;
+    border-radius: 16px !important;
+    border: 1px solid rgba(255,255,255,0.62);
+    min-width: 300px;
+    max-width: 90%;
+    margin: unset !important;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.card-detail table td {
+    min-width: 90px;
+    padding: 4px 0;
+    vertical-align: initial;
+}
+.card-detail table td i {
+    margin-right: 8px;
+}

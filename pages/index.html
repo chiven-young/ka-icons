@@ -32,20 +32,6 @@
                 height: 4px;
                 border-radius: 2px;
             }
-            .card-detail {
-                position: relative;
-                -webkit-backdrop-filter: saturate(180%) blur(20px);
-                backdrop-filter: saturate(180%) blur(20px);
-                background-color: rgba(255,255,255,0.72);
-                border-radius: 16px;
-                border: 1px solid rgba(255,255,255,0.62);
-                min-width: 300px;
-                max-width: 90%;
-                margin: unset !important;
-                left: 50%;
-                top: 50%;
-                transform: translate(-50%,-50%);
-            }
             .card-detail .el-dialog__header {
                 display: none;
             }
@@ -54,10 +40,6 @@
                 right: 20px;
                 top: 20px;
                 cursor: pointer;
-            }
-            .card-detail table td {
-                min-width: 90px;
-                vertical-align: initial;
             }
             .card-detail .el-dialog__body h1 {
                 color: #333;
@@ -162,35 +144,35 @@
                         <h1>{{theme.name}}</h1>
                         <table border="0">
                             <tr>
-                                <td><i class="el-icon-user"></i> 作者：</td>
+                                <td><i class="el-icon-user"></i>作者：</td>
                                 <td>{{theme.author}}</td>
                             </tr>
                             <tr>
-                                <td><i class="el-icon-collection-tag"></i> 版本：</td>
+                                <td><i class="el-icon-collection-tag"></i>版本：</td>
                                 <td>v {{theme.version}}</td>
                             </tr>
                             <tr>
-                                <td><i class="el-icon-time"></i> 更新时间：</td>
+                                <td><i class="el-icon-time"></i>更新时间：</td>
                                 <td>{{theme.updateTime}}</td>
                             </tr>
                             <tr>
-                                <td><i class="el-icon-document"></i> 主题介绍：</td>
+                                <td><i class="el-icon-document"></i>主题介绍：</td>
                                 <td>{{theme.desc}}</td>
                             </tr>
                             <tr>
-                                <td><i class="el-icon-open"></i> 主题状态：</td>
+                                <td><i class="el-icon-open"></i>主题状态：</td>
                                 <td>{{theme.status}}</td>
                             </tr>
                             <tr>
-                                <td><i class="el-icon-pie-chart"></i> 开发进度：</td>
+                                <td><i class="el-icon-pie-chart"></i>开发进度：</td>
                                 <td>{{theme.percentage}}</td>
                             </tr>
                             <tr>
-                                <td><i class="el-icon-coin"></i> 价格：</td>
+                                <td><i class="el-icon-coin"></i>价格：</td>
                                 <td>{{theme.price}}</td>
                             </tr>
                             <tr>
-                                <td><i class="el-icon-mobile"></i> 适配手机：</td>
+                                <td><i class="el-icon-mobile"></i>适配手机：</td>
                                 <td>{{theme.support}}</td>
                             </tr>
                         </table>
