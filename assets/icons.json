@@ -551,11 +551,11 @@
         },
         { 
             "isMany": 0,
-            "imgUrl": "../assets/icons@4x/net.chiven.kaicons.png",
+            "imgUrl": "../assets/icons@4x/net.chiven.YohoScrawlIcons.png",
             "name": "一函碎念",
             "desc": "咕咕咕",
-            "packageName": "net.chiven.yohoscrawl",
-            "updateTime": "2021.11.26",
+            "packageName": "net.chiven.YohoScrawlIcons",
+            "updateTime": "2022.01.04",
             "note": ""
         }
     ]
