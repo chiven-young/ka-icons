@@ -252,6 +252,7 @@ p a {
     border-radius: 12px;
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center center;
 }
 .card-content.themes .el-carousel__container {
     height: 100%;
