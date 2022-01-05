@@ -438,13 +438,26 @@
             "note": ""
         },
         { 
-            "isMany": 0,
-            "imgUrl": "../assets/icons@4x/com.android.contacts.activities.DialtactsActivity.png",
-            "name": "电话",
-            "desc": "我心爱的BB机",
-            "packageName": "com.android.contacts.activities.DialtactsActivity",
-            "updateTime": "2020.01.01",
-            "note": ""
+            "isMany": 1,
+            "name": "视频",
+            "iconbox": [
+                {
+                    "imgUrl": "../assets/icons@4x/com.android.contacts.activities.DialtactsActivity.png",
+                    "name": "电话",
+                    "desc": "呼叫喵星呼叫喵星~",
+                    "packageName": "com.android.contacts.activities.DialtactsActivity",
+                    "updateTime": "2020.01.01",
+                    "note": ""
+                },
+                {
+                    "imgUrl": "../assets/icons@4x/com.android.contacts.activities.DialtactsActivity2.png",
+                    "name": "电话",
+                    "desc": "我心爱的BB机",
+                    "packageName": "com.android.contacts.activities.DialtactsActivity2",
+                    "updateTime": "2020.01.01",
+                    "note": ""
+                }
+            ]
         },
         { 
             "isMany": 0,
