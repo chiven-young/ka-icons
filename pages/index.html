@@ -119,7 +119,7 @@
                     <span class="color-deep">手机主题！</span><span class="color-shallow">把故事装进手机里。</span>
                 </div>
             </div>
-            <div class="card-scroll">
+            <div class="card-scroll themes">
                 <div v-for="theme in themes" class="card-content themes">
                     <el-carousel :interval="5000" arrow="always" class="card-img-wrapper">
                         <el-carousel-item v-for="imgs in theme.images" :key="imgs">
@@ -127,11 +127,12 @@
                         </el-carousel-item>
                     </el-carousel>
                     <div class="card-info">
-                        <div class="text-small">{{theme.name}}</div>
-                        <span class="text-small opacity6"><i class="el-icon-user"></i> {{theme.author}}</span>&nbsp;&nbsp;
-                        <span class="text-small opacity6"><i class="el-icon-loading"></i> {{theme.status}}</span>&nbsp;&nbsp;
-                        <span class="text-small opacity6"><i class="el-icon-collection-tag"></i> v {{theme.version}}</span>&nbsp;&nbsp;
-                        <span class="text-small opacity6"><i class="el-icon-coin"></i> {{theme.price}}</span>&nbsp;&nbsp;
+                        <div class="">{{theme.name}}</div>
+                        <span class="text-small opacity8"><i class="el-icon-user"></i> {{theme.author}}</span>&nbsp;&nbsp;
+                        <!-- <span class="text-small opacity8"><i class="el-icon-loading"></i> {{theme.status}}</span>&nbsp;&nbsp; -->
+                        <span class="text-small opacity8"><i class="el-icon-collection-tag"></i> v {{theme.version}}</span>&nbsp;&nbsp;
+                        <span class="text-small opacity8"><i class="el-icon-coin"></i> {{theme.price}}</span>&nbsp;&nbsp;
+                        <a class="text-small" :href="theme.download"><i class="el-icon-download"></i>下载</a>
                     </div>
                     <a @click="dialogVisible = theme.name" class="dialog-btn-more"><i class="el-icon-circle-plus-outline"></i></a>
                     <el-dialog
@@ -193,7 +194,7 @@
             </div>
             
             <div class="container">
-                <div class="text-small"><i class="el-icon-warning-outline"></i> 对于已经上线的主题，请前往对应手机主题商城搜索获取主题。</div>
+                <div class="text-small"><i class="el-icon-warning-outline"></i> 懒得走审核流程了，这里直接提供了主题文件，自行下载并移动到手机主题文件夹即可。</div>
                 <br><br>
                 <!-- <div>未来计划</div>
                 <div class="footnotes">

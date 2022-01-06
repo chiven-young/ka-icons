@@ -41,7 +41,7 @@ Vue.component('footer-content', {
 
 // 下载弹窗
 Vue.component('download-dialog-content',{
-    template: `<div>
+    template: `<div class="card-detail-body">
     <h1>下载图标</h1>
         <p>在下载前请认真阅读《使用协议》，若您已开始下载，则表明您已同意该协议。</p>
         <div>

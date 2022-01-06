@@ -227,6 +227,12 @@ p a {
     overflow-x: scroll;
     padding: 16px 0;
 }
+.card-scroll.themes{
+    white-space: nowrap;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    padding: 16px 0 60px 0;
+}
 .card-content {
     display: inline-block;
     background-color: #fff;
@@ -236,11 +242,10 @@ p a {
     vertical-align: top;
 }
 .card-content.themes {
-    height: 534px;
-    width: 300px;
+    height: 540px;
+    width: 270px;
 }
 .card-content.themes .card-img-wrapper {
-    position: absolute;
     height: 100%;
     width: 100%;
     border-radius: 12px;
@@ -258,16 +263,8 @@ p a {
     height: 100%;
 }
 .card-content.themes .card-info{
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: rgba(0, 0, 0,0.1);
-    border-radius: 0 0 12px 12px;
     text-align: left;
-}
-.card-content.themes .card-info .text-small {
-    color: #fff;
+    padding: 12px 0;
 }
 .card-content.themes .dialog-btn-more {
     position: absolute;
@@ -278,6 +275,9 @@ p a {
     cursor: pointer;
 }
 @media (min-width: 1052px) {
+    .impression {
+        background-size: 100%;
+    }
     .card-content {
         transform: translateX(calc(max(1024px, 100vw)/2 - 526px));
         height: 460px;
@@ -291,6 +291,9 @@ p a {
     }
 }
 @media (max-width:1052px) {
+    .impression {
+        background-size: 130%;
+    }
     .card-content {
         transform: translateX(calc(max(1024px, 100vw)/2 - 510px));
         width: 300px;
@@ -310,11 +313,17 @@ p a {
     }
 }
 @media (max-width:1024px) {
+    .impression {
+        background-size: 180%;
+    }
     .card-content {
         width: 360px;
     }
 }
 @media (max-width: 414px) {
+    .impression {
+        background-size: 300%;
+    }
     .card-content {
         width: 300px;
         height: 440px;
@@ -391,7 +400,10 @@ p a {
     white-space: normal;
 }
 .card-content a {
-    color: #00BB5B;
+    color: #fc5b0e;
+}
+.card-detail-body a {
+    color: #fc5b0e;
 }
 .card-content a:hover {
     text-decoration: underline;
@@ -540,9 +552,9 @@ p a {
     height: 17px;
 }
 .primary {
-    color: #ffffff !important;
-    background-color: #00D365;
-    border: 1px solid #00D365;
+    color: #282828 !important;
+    background-color: #ffe300;
+    border: 1px solid #ffd000;
 }
 .titlebar-btn:hover {
     text-decoration: none;

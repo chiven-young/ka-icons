@@ -8,29 +8,14 @@
             "price": "免费",
             "status": "开发中",
             "percentage": "新建文件夹",
-            "updateTime": "2021.12.01",
-            "support": "华为，小米",
+            "updateTime": "2022.01.06",
+            "support": "华为手机",
             "images": [
-                {"imgUrl": "https://cdn.chiven.net/wallpaper-2160x2160.jpg"},
-                {"imgUrl": "https://cdn.chiven.net/wallpaper-2160x2160.jpg"}
-            ]
-        },
-        {
-            "name": "测试主题",
-            "author": "xx",
-            "desc": "这只是一个占位的测试数据",
-            "version": "1.1.1",
-            "price": "免费",
-            "status": "开发中",
-            "percentage": "20%",
-            "updateTime": "2020.01.01",
-            "support": "华为，小米",
-            "images": [
-                {"imgUrl": "https://cdn.pixabay.com/photo/2021/11/13/09/29/merry-christmas-6790865__480.png"},
-                {"imgUrl": "https://cdn.pixabay.com/photo/2021/11/13/09/29/merry-christmas-6790865__480.png"},
-                {"imgUrl": "https://cdn.pixabay.com/photo/2021/11/13/09/29/merry-christmas-6790865__480.png"},
-                {"imgUrl": "https://cdn.pixabay.com/photo/2021/11/13/09/29/merry-christmas-6790865__480.png"}
-            ]
+                {"imgUrl": "../assets/themes/1.1/preview_widget_0.jpg"},
+                {"imgUrl": "../assets/themes/1.1/preview_unlock_0.jpg"},
+                {"imgUrl": "../assets/themes/1.1/preview_systemui_0.jpg"}
+            ],
+            "download": "../assets/themes/1.1/YohoScrawl_1.1.hwt"
         }
     ]
 }
