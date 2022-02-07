@@ -48,7 +48,9 @@ Vue.component('download-dialog-content',{
             <a href="./agreement.html">使用协议</a>&emsp;<span class="split-line">|</span>&emsp; 
             <a href="./copyright.html">版权声明</a>
         </div><br>
-        <p>链接:<a target="_blank" href="https://pan.baidu.com/s/1hOuUiqa56yyjBpu9PZWsTQ">https://pan.baidu.com/s/1hOuUiqa56yyjBpu9PZWsTQ</a> 提取码:4sji</p>
+        <p>链接:<a target="_blank" href="https://pan.baidu.com/s/1EM-QNge0zECgtwyWG28ugA
+        ">https://pan.baidu.com/s/1EM-QNge0zECgtwyWG28ugA
+        </a>提取码: o1j3</p>
     </div>`
 })
 

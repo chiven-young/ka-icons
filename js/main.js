@@ -9,7 +9,7 @@ var app = new Vue({
             commentsNum: "0",
             comments: [],
             commentText: "",
-            updateTimeAll: "2022.01.04",
+            updateTimeAll: "2022.02.06",
             icons: [],
             themes: [],
             search: '',
