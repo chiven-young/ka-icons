@@ -1,5 +1,5 @@
 <p align="center">
-  <img width="144px" src="https://www.chiven.net/project/Yo-ho-Scrawl-Icons/assets/icons@4x/com.zcool.community.png" />
+  <img width="144px" src="https://www.chiven.net/apps/yoho-icons/assets/icons@4x/com.zcool.community.png" />
 </p>
 
 <h1 align="center">一函碎念</h1>
@@ -14,7 +14,7 @@
 平时随便画的玩梗图标，偶尔更新。因为这些图标是一些琐碎的小脑洞，彼此不成体系，故名《一函碎念》。
 
 本项目是一个展示《一函碎念》的网站。可以点此查看：
-[https://www.chiven.net/project/Yo-ho-Scrawl-Icons/pages/index.html](https://www.chiven.net/project/Yo-ho-Scrawl-Icons/pages/index.html)
+[https://www.chiven.net/apps/yoho-icons/pages/](https://www.chiven.net/apps/yoho-icons/pages/)
 
 
 ## 图标位置与说明
@@ -33,21 +33,21 @@
 ## 一些图标展示
 
 <p align="center">
-<img src="https://www.chiven.net/project/Yo-ho-Scrawl-Icons/assets/icons/com.tencent.mm.png"/></p>
+<img src="https://www.chiven.net/apps/yoho-icons/assets/icons/com.tencent.mm.png"/></p>
 <p align="center">微信：莫发语音</p>
 
 <p align="center">
-<img src="https://www.chiven.net/project/Yo-ho-Scrawl-Icons/assets/icons/com.tencent.mobileqq.png"/></p>
+<img src="https://www.chiven.net/apps/yoho-icons/assets/icons/com.tencent.mobileqq.png"/></p>
 <p align="center">手机QQ：我不在了，有事烧纸</p>
 
 <p align="center">
-<img src="https://www.chiven.net/project/Yo-ho-Scrawl-Icons/assets/icons/com.tencent.weread.png"/></p>
+<img src="https://www.chiven.net/apps/yoho-icons/assets/icons/com.tencent.weread.png"/></p>
 <p align="center">微信读书：太卷怎么办？读书破万卷！</p>
 
 <p align="center">
-<img class="card-icon" src="https://www.chiven.net/project/Yo-ho-Scrawl-Icons/assets/icons/com.taobao.taobao.png"/></p>
+<img class="card-icon" src="https://www.chiven.net/apps/yoho-icons/assets/icons/com.taobao.taobao.png"/></p>
 <p align="center">淘宝：这爪，由不得我</p>
 
 <p align="center">
-<img class="card-icon" src="https://www.chiven.net/project/Yo-ho-Scrawl-Icons/assets/icons/tv.danmaku.bili.png"/></p>
+<img class="card-icon" src="https://www.chiven.net/apps/yoho-icons/assets/icons/tv.danmaku.bili.png"/></p>
 <p align="center">哔哩哔哩：YYDS：永远单身</p>
